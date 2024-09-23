@@ -5,6 +5,7 @@ En esta aplicación se encuentran tres pantallas de la aplicación Web SincronIA
 - Pantalla de Inicio de Sesión
 - Pantalla Recuperar Contraseña - Con ventana modal
 - Pantalla Cambiar Contraseña - Con ventana modal
+  
 A continuación se tiene una vista previa de las pantallas
 
 <img src="https://github.com/user-attachments/assets/d874fedc-e820-4622-933b-c387061ac631" alt="Pantalla Inicio de Sesion" width="400"/>

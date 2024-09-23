@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sincronia_web/views/pantalla_cambiar_contrasena.dart';
 import 'package:sincronia_web/widgets/button.dart';
+import 'package:sincronia_web/widgets/modal.dart';
 import 'package:sincronia_web/widgets/text_field.dart';
 
 class PantallaOlvideContrasena extends StatelessWidget {
@@ -65,6 +67,25 @@ class PantallaOlvideContrasena extends StatelessWidget {
                       text: 'REESTABLECER CONTRASEÑA',
                       width: 400.0,
                       onPressed: () {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return CustomModal(
+                              title: 'Recuperar Contraseña',
+                              description:
+                                  'Revisa tu correo electrónico y da click en el enlace de recuperación que te enviamos',
+                              onPressed: () {
+                                Navigator.pop(context);
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => PantallaCambiarContrasena(),
+                                  ),
+                                );
+                              },
+                            );
+                          },
+                        );
                       },
                       baseColor: const Color(0xFF1976D2),
                     ),

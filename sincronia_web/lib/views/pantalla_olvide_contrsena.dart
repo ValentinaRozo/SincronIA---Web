@@ -29,7 +29,7 @@ class PantallaOlvideContrasena extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const SizedBox(height: 60),
+                    const SizedBox(height: 50),
                     Image.asset(
                       'assets/logo_SincronIA.png',
                       height: 150,

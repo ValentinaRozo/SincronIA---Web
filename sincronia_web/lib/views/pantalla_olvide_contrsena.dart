@@ -5,6 +5,8 @@ import 'package:sincronia_web/widgets/modal.dart';
 import 'package:sincronia_web/widgets/text_field.dart';
 
 class PantallaOlvideContrasena extends StatelessWidget {
+  const PantallaOlvideContrasena({super.key});
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -17,7 +19,7 @@ class PantallaOlvideContrasena extends StatelessWidget {
           Align(
             alignment: Alignment.bottomLeft,
             child: Image.asset(
-              'assets/fondo.png', 
+              'assets/fondo.png',
               height: size.height * 0.4,
               fit: BoxFit.contain,
             ),
@@ -35,17 +37,15 @@ class PantallaOlvideContrasena extends StatelessWidget {
                       height: 150,
                     ),
                     const SizedBox(height: 20),
-                    
                     const Text(
                       'Recuperar contraseña',
                       style: TextStyle(
                         fontSize: 48,
                         fontWeight: FontWeight.bold,
-                        color:  Color(0xFF0D47A1),
+                        color: Color(0xFF0D47A1),
                       ),
                     ),
                     const SizedBox(height: 10),
-                    
                     const Text(
                       'Ingresa tu correo electrónico y se te enviará el enlace de recuperación',
                       textAlign: TextAlign.center,
@@ -55,14 +55,12 @@ class PantallaOlvideContrasena extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 30),
-                    
                     const CustomTextField(
                       labelText: 'Correo Electrónico',
                       hintText: 'Escribe tu correo',
                       width: 800.0,
                     ),
                     const SizedBox(height: 20),
-                    
                     CustomButton(
                       text: 'REESTABLECER CONTRASEÑA',
                       width: 400.0,
@@ -79,7 +77,8 @@ class PantallaOlvideContrasena extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => PantallaCambiarContrasena(),
+                                    builder: (context) =>
+                                        PantallaCambiarContrasena(),
                                   ),
                                 );
                               },

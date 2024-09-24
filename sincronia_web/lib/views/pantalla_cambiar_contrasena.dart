@@ -36,7 +36,7 @@ class PantallaCambiarContrasena extends StatelessWidget {
                       height: 150,
                     ),
                     const SizedBox(height: 20),
-                    
+
                     //Titulo
                     const Text(
                       'Cambiar contraseña',
@@ -48,7 +48,7 @@ class PantallaCambiarContrasena extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 10),
-                    
+
                     //instrucciones
                     const Text(
                       'Ingresa tu contraseña actual y tu nueva contraseña',
@@ -60,7 +60,7 @@ class PantallaCambiarContrasena extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 30),
-                    
+
                     // Campos
                     const CustomPasswordField(
                       labelText: 'Contraseña Actual',
@@ -68,21 +68,21 @@ class PantallaCambiarContrasena extends StatelessWidget {
                       width: 800.0,
                     ),
                     const SizedBox(height: 20),
-                    
+
                     const CustomPasswordField(
                       labelText: 'Nueva Contraseña',
                       hintText: 'Escribe la contraseña nueva',
                       width: 800.0,
                     ),
                     const SizedBox(height: 20),
-                    
+
                     const CustomPasswordField(
                       labelText: 'Confirma la Contraseña',
                       hintText: 'Repite la nueva contraseña',
                       width: 800.0,
                     ),
                     const SizedBox(height: 40),
-                    
+
                     CustomButton(
                       text: 'CAMBIAR CONTRASEÑA',
                       width: 400.0,
@@ -99,6 +99,8 @@ class PantallaCambiarContrasena extends StatelessWidget {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
+                                    builder: (context) =>
+                                        const PantallaInicioSesion(),
                                     builder: (context) => const PantallaInicioSesion(),
                                   ),
                                 );

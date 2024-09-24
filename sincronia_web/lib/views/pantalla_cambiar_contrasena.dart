@@ -101,6 +101,7 @@ class PantallaCambiarContrasena extends StatelessWidget {
                                   MaterialPageRoute(
                                     builder: (context) =>
                                         const PantallaInicioSesion(),
+                                    builder: (context) => const PantallaInicioSesion(),
                                   ),
                                 );
                               },
